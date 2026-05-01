@@ -12,3 +12,4 @@ add_subdirectory(packages)
 
 # Add example applications
 add_subdirectory(example/ck_testing_app)
+add_subdirectory(example/ck_mpsc_app)
