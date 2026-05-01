@@ -1,5 +1,8 @@
 {
     "chat.tools.terminal.autoApprove": {
-        "cmake": true
+        "cmake": true,
+        "./build/ck_mpsc_app": true,
+        "./build/example/ck_testing_app/ck_testing_app": true,
+        "./build/example/ck_mpsc_app/ck_mpsc_app": true
     }
 }
