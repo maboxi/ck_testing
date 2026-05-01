@@ -1,0 +1,20 @@
+{
+  "name": "ck_testing",
+  "image": "mcr.microsoft.com/devcontainers/cpp:1-ubuntu-22.04",
+  "features": {
+    //"ghcr.io/devcontainers/features/cmake:1": {},
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack"
+      ],
+      "settings": {
+        "cmake.configureOnOpen": true,
+        "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+      }
+    }
+  }
+}
