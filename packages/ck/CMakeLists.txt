@@ -10,6 +10,6 @@ add_library(ck_headers INTERFACE)
 add_library(ck::ck ALIAS ck_headers)
 
 target_include_directories(ck_headers INTERFACE
-	${CMAKE_SOURCE_DIR}/include
+	${CMAKE_CURRENT_SOURCE_DIR}/port/include
 	${CPM_PACKAGE_ck_SOURCE_DIR}/include
 )
