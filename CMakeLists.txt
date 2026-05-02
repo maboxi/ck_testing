@@ -7,8 +7,14 @@ set(CPM_SOURCE_CACHE "${CMAKE_SOURCE_DIR}/.packages" CACHE PATH "CPM package cac
 # Add CPM
 include(cmake/CPM.cmake)
 
+# Cache variable to also emit assembly (.s) files for example targets
+set(OUTPUT_ASM OFF CACHE BOOL "Also generate assembly (.s) for example targets")
+
 # Add packages helper
 add_subdirectory(packages)
+
+# Assembly output helper
+include(cmake/AsmOutput.cmake)
 
 # Add example applications
 add_subdirectory(example/ck_testing_app)

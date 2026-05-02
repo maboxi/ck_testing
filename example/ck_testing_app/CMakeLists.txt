@@ -8,3 +8,5 @@ target_include_directories(ck_testing_app PRIVATE
     ${CMAKE_SOURCE_DIR}/include
     ${CMAKE_SOURCE_DIR}/.packages/ck/e2a3/include
 )
+
+add_assembly_output(ck_testing_app)
